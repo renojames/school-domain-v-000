@@ -21,9 +21,7 @@ class School
   end
 
   def sort
-    @roster.each do |grade|
-      @roster[grade].sort
-    end
+    @roster.each_value { |v| v.sort! }
   end
 
   attr_reader :roster
