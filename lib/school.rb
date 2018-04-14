@@ -9,9 +9,7 @@ class School
 
   def add_student(name, grade)
     @roster[grade] = []
-    if grade.contains?(name) == false
-      @roster[grade] << name
-    end
+    @roster[grade] << name
   end
 
   attr_reader :roster
